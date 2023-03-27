@@ -80,6 +80,11 @@
         "Valor2":57
     },
     {
+        "Operacion":"Resta",
+        "Valor1":71,
+        "Valor2":100
+    },
+    {
         "Operacion":"Potencia",
         "Valor1":
             [
@@ -96,8 +101,38 @@
     },
     {
         "Operacion":"Division",
-        "Valor1":10,
+        "Valor1":70,
         "Valor2":5
+    },
+    {
+        "Operacion":"Division",
+        "Valor1":
+            [
+            "Operacion":"suma",
+            "Valor1":
+            [
+                "Operacion":"Suma",
+                "Valor1":10,
+                "Valor2":5
+            ],
+            "valor":50
+        ],
+        "Valor2":10
+    },
+    {
+        "Operacion":"mod",
+        "Valor1":
+            [
+            "Operacion":"suma",
+            "Valor1":
+            [
+                "Operacion":"Suma",
+                "Valor1":10,
+                "Valor2":5
+            ],
+            "valor":50
+        ],
+        "Valor2":9
     },
     {
         "Operacion":"mod",
@@ -114,8 +149,30 @@
          ]
     },
     {
+        "Operacion":"Suma",
+        "Valor1":
+            [
+            "Operacion":"suma",
+            "Valor1":
+            [
+                "Operacion":"raiz",
+                "Valor1":10
+            ],
+            "valor":50
+        ],
+        "Valor2":10
+    },
+    {
         "Operacion":"inverso",
-        "Valor1":50
+        "Valor1":[
+            "Operacion":"Suma",
+            "Valor1":25,
+            "Valor2":10
+        ]
+    },
+    {
+        "Operacion":"inverso",
+        "Valor1":0
     },
     {
         "Operacion":"suma",

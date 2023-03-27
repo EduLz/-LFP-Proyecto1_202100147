@@ -48,15 +48,12 @@ def abrir_archivo():
                 archivo_seleccionado = file_path
     button4 = tk.Button(new_window, text="Guardar como", width=15, command=guardar_como)
     button4.place(x=450, y=70)
-    #FALTA EL ANALIZADOR
     def boton_analizador():
         global archivo_seleccionado
         autom = Automata()
         cadena = open(archivo_seleccionado, 'r').read()
         resultado = autom.analizar(cadena, Operacion(''))
-
         #autom.imprimir_tokens()
-
         if autom.estado_actual in autom.estados_aceptacion:
             for oper in resultado[1]:
                 resultado = oper.operar()
