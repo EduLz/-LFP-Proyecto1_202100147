@@ -1,0 +1,8 @@
+// Grafo de operación Division
+digraph {
+	"74bf2dbd-2c46-424e-920e-c42adc8d81cf" [label="Division: 14.0" fillcolor=green fontcolor="#FB0000" style=filled]
+	"9b48fe2b-b142-40a3-b41c-d84f1073ea85" [label=70 fillcolor=green fontcolor="#002EFF" style=filled]
+	"74bf2dbd-2c46-424e-920e-c42adc8d81cf" -> "9b48fe2b-b142-40a3-b41c-d84f1073ea85" [color="#0D2BE9" fontcolor="#FB0000"]
+	"52b86a23-3f89-4533-b240-9dca2fc6f01c" [label=5 fillcolor=green fontcolor="#002EFF" style=filled]
+	"74bf2dbd-2c46-424e-920e-c42adc8d81cf" -> "52b86a23-3f89-4533-b240-9dca2fc6f01c" [color="#0D2BE9" fontcolor="#FB0000"]
+}

@@ -1,0 +1,10 @@
+// Grafo de operación inverso
+digraph {
+	"d06a8a7c-abe3-4522-ae10-1ad0b0614965" [label="inverso: 0.02857142857142857" fillcolor=green fontcolor="#FB0000" style=filled]
+	"ce94f866-ed67-4f07-97ee-eb9fd19e462b" [label="Suma: 35.0" fillcolor=green fontcolor="#FB0000" style=filled]
+	"238e291e-b935-4363-84b0-8e049c99310d" [label=25 fillcolor=green fontcolor="#002EFF" style=filled]
+	"ce94f866-ed67-4f07-97ee-eb9fd19e462b" -> "238e291e-b935-4363-84b0-8e049c99310d" [color="#0D2BE9" fontcolor="#FB0000"]
+	"9a22ce9d-6916-417b-b20b-19523ab65509" [label=10 fillcolor=green fontcolor="#002EFF" style=filled]
+	"ce94f866-ed67-4f07-97ee-eb9fd19e462b" -> "9a22ce9d-6916-417b-b20b-19523ab65509" [color="#0D2BE9" fontcolor="#FB0000"]
+	"d06a8a7c-abe3-4522-ae10-1ad0b0614965" -> "ce94f866-ed67-4f07-97ee-eb9fd19e462b" [color="#0D2BE9" fontcolor="#FB0000"]
+}

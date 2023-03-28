@@ -1,9 +1,30 @@
 import math
+import graphviz
+import uuid
+from graphviz import Digraph
 class Operacion:
     def __init__(self, tipo):
         self.tipo = tipo
         self.operandos = []
-
+    def generar_grafo(self):
+        grafo = graphviz.Digraph(comment=f'Grafo de operación {self.tipo}')
+        self.generar_nodos(grafo)
+        return grafo
+    def generar_nodos(self, grafo):
+        id_nodo = str(uuid.uuid4())
+        # Agregar etiqueta con el nombre de la operación y el resultado
+        etiqueta = f"{self.tipo}: {self.operar()[1]}"
+        grafo.node(id_nodo, label=etiqueta,style='filled', fillcolor='green',fontcolor='#FB0000')
+        for operando in self.operandos:
+            if type(operando) is Operacion:
+                id_operando = operando.generar_nodos(grafo)
+                grafo.edge(id_nodo, id_operando, fontcolor='#FB0000',color='#0D2BE9')
+            else:
+                id_operando = str(uuid.uuid4())
+                grafo.node(id_operando, label=operando,style='filled', fillcolor='green',fontcolor='#002EFF')
+                grafo.edge(id_nodo, id_operando, fontcolor='#FB0000',color='#0D2BE9')
+        return id_nodo
+    
     def operar(self):
         res = '' # 1 + (1 + 1) = 3
         resnum = 0

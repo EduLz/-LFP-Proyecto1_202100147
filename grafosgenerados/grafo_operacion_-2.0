@@ -1,0 +1,16 @@
+// Grafo de operación Resta
+digraph {
+	"698e221b-c4ca-4b4c-a66f-ef4c4c528d71" [label="Resta: -2.0" fillcolor=green fontcolor="#FB0000" style=filled]
+	"ed14c9cc-8a39-4e0c-9a20-588435b036e3" [label="suma: 55.0" fillcolor=green fontcolor="#FB0000" style=filled]
+	"5bd0e367-a818-4e18-b1b9-73ad29130687" [label="Suma: 15.0" fillcolor=green fontcolor="#FB0000" style=filled]
+	"a22a5d71-99e5-4630-99f9-932c32ce95b1" [label=10 fillcolor=green fontcolor="#002EFF" style=filled]
+	"5bd0e367-a818-4e18-b1b9-73ad29130687" -> "a22a5d71-99e5-4630-99f9-932c32ce95b1" [color="#0D2BE9" fontcolor="#FB0000"]
+	"67914c6e-8780-4885-b6ed-ce0eba787be0" [label=5 fillcolor=green fontcolor="#002EFF" style=filled]
+	"5bd0e367-a818-4e18-b1b9-73ad29130687" -> "67914c6e-8780-4885-b6ed-ce0eba787be0" [color="#0D2BE9" fontcolor="#FB0000"]
+	"ed14c9cc-8a39-4e0c-9a20-588435b036e3" -> "5bd0e367-a818-4e18-b1b9-73ad29130687" [color="#0D2BE9" fontcolor="#FB0000"]
+	"49dad98f-064d-4431-84bb-c87dd922c217" [label=40 fillcolor=green fontcolor="#002EFF" style=filled]
+	"ed14c9cc-8a39-4e0c-9a20-588435b036e3" -> "49dad98f-064d-4431-84bb-c87dd922c217" [color="#0D2BE9" fontcolor="#FB0000"]
+	"698e221b-c4ca-4b4c-a66f-ef4c4c528d71" -> "ed14c9cc-8a39-4e0c-9a20-588435b036e3" [color="#0D2BE9" fontcolor="#FB0000"]
+	"0d08847c-9704-49bf-ac4b-2083f1977f7c" [label=57 fillcolor=green fontcolor="#002EFF" style=filled]
+	"698e221b-c4ca-4b4c-a66f-ef4c4c528d71" -> "0d08847c-9704-49bf-ac4b-2083f1977f7c" [color="#0D2BE9" fontcolor="#FB0000"]
+}

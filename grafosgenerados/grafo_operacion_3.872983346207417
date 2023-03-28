@@ -1,0 +1,10 @@
+// Grafo de operación raiz
+digraph {
+	"5fb50f14-4a15-48f6-ba78-9a22533be6b7" [label="raiz: 3.872983346207417" fillcolor=green fontcolor="#FB0000" style=filled]
+	"86b931f7-293b-412a-8839-d9eedc2154ae" [label="suma: 15.0" fillcolor=green fontcolor="#FB0000" style=filled]
+	"76fb7195-23d4-48f3-8acf-c65df6f4ac60" [label=5 fillcolor=green fontcolor="#002EFF" style=filled]
+	"86b931f7-293b-412a-8839-d9eedc2154ae" -> "76fb7195-23d4-48f3-8acf-c65df6f4ac60" [color="#0D2BE9" fontcolor="#FB0000"]
+	"c7d2cacc-475a-4be5-8a2f-88ab8ac38e44" [label=10 fillcolor=green fontcolor="#002EFF" style=filled]
+	"86b931f7-293b-412a-8839-d9eedc2154ae" -> "c7d2cacc-475a-4be5-8a2f-88ab8ac38e44" [color="#0D2BE9" fontcolor="#FB0000"]
+	"5fb50f14-4a15-48f6-ba78-9a22533be6b7" -> "86b931f7-293b-412a-8839-d9eedc2154ae" [color="#0D2BE9" fontcolor="#FB0000"]
+}

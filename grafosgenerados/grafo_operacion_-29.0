@@ -1,0 +1,8 @@
+// Grafo de operación Resta
+digraph {
+	"584fd62e-79bc-4206-a94b-2b0db64e67ee" [label="Resta: -29.0" fillcolor=green fontcolor="#FB0000" style=filled]
+	"77ccd9c7-5ff3-4d65-9564-e6d837f9d0c1" [label=71 fillcolor=green fontcolor="#002EFF" style=filled]
+	"584fd62e-79bc-4206-a94b-2b0db64e67ee" -> "77ccd9c7-5ff3-4d65-9564-e6d837f9d0c1" [color="#0D2BE9" fontcolor="#FB0000"]
+	"9a529a02-4bf6-4f3e-b576-734f20950cab" [label=100 fillcolor=green fontcolor="#002EFF" style=filled]
+	"584fd62e-79bc-4206-a94b-2b0db64e67ee" -> "9a529a02-4bf6-4f3e-b576-734f20950cab" [color="#0D2BE9" fontcolor="#FB0000"]
+}

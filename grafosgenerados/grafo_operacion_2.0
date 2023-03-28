@@ -1,0 +1,8 @@
+// Grafo de operación mod
+digraph {
+	"25e6bc3e-11f6-4623-a565-77060aac9dd2" [label="mod: 2.0" fillcolor=green fontcolor="#FB0000" style=filled]
+	"ec05732c-c528-4e90-8d35-d08adfb3f5e0" [label=38 fillcolor=green fontcolor="#002EFF" style=filled]
+	"25e6bc3e-11f6-4623-a565-77060aac9dd2" -> "ec05732c-c528-4e90-8d35-d08adfb3f5e0" [color="#0D2BE9" fontcolor="#FB0000"]
+	"f791979b-2a19-4d7e-944a-069f4ba69284" [label=12 fillcolor=green fontcolor="#002EFF" style=filled]
+	"25e6bc3e-11f6-4623-a565-77060aac9dd2" -> "f791979b-2a19-4d7e-944a-069f4ba69284" [color="#0D2BE9" fontcolor="#FB0000"]
+}

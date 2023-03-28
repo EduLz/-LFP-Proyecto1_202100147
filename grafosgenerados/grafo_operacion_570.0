@@ -1,0 +1,8 @@
+// Grafo de operación Multiplicacion
+digraph {
+	"4ecdfc4b-9bc5-40a9-aaa4-2ee0e56c328c" [label="Multiplicacion: 570.0" fillcolor=green fontcolor="#FB0000" style=filled]
+	"453fa0fc-c0f8-4c79-bd6f-74cd52a80372" [label=10 fillcolor=green fontcolor="#002EFF" style=filled]
+	"4ecdfc4b-9bc5-40a9-aaa4-2ee0e56c328c" -> "453fa0fc-c0f8-4c79-bd6f-74cd52a80372" [color="#0D2BE9" fontcolor="#FB0000"]
+	"73c31039-a63b-4f2d-8276-344a7daeb61a" [label=57 fillcolor=green fontcolor="#002EFF" style=filled]
+	"4ecdfc4b-9bc5-40a9-aaa4-2ee0e56c328c" -> "73c31039-a63b-4f2d-8276-344a7daeb61a" [color="#0D2BE9" fontcolor="#FB0000"]
+}

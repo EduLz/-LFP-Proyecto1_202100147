@@ -1,0 +1,6 @@
+// Grafo de operación inverso
+digraph {
+	"c9570bba-645a-4de0-9900-456e32976ca7" [label="inverso: None" fillcolor=green fontcolor="#FB0000" style=filled]
+	"bb400678-3d06-45b3-b86a-698b52134b8e" [label=0 fillcolor=green fontcolor="#002EFF" style=filled]
+	"c9570bba-645a-4de0-9900-456e32976ca7" -> "bb400678-3d06-45b3-b86a-698b52134b8e" [color="#0D2BE9" fontcolor="#FB0000"]
+}

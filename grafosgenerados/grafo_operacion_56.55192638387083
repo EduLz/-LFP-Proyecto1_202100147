@@ -1,0 +1,10 @@
+// Grafo de operación suma
+digraph {
+	"91beedd2-72da-476f-a14e-80738712d63f" [label="suma: 56.55192638387083" fillcolor=green fontcolor="#FB0000" style=filled]
+	"ab34737d-c9c3-4fff-a3ab-3fc9b835cf6a" [label="coseno: -0.4480736161291701" fillcolor=green fontcolor="#FB0000" style=filled]
+	"8d8fdd4f-1a6d-46d5-9462-2dbaf2510a93" [label=90 fillcolor=green fontcolor="#002EFF" style=filled]
+	"ab34737d-c9c3-4fff-a3ab-3fc9b835cf6a" -> "8d8fdd4f-1a6d-46d5-9462-2dbaf2510a93" [color="#0D2BE9" fontcolor="#FB0000"]
+	"91beedd2-72da-476f-a14e-80738712d63f" -> "ab34737d-c9c3-4fff-a3ab-3fc9b835cf6a" [color="#0D2BE9" fontcolor="#FB0000"]
+	"b7daec42-a662-420c-ae8e-2ddcb128cd5f" [label=57 fillcolor=green fontcolor="#002EFF" style=filled]
+	"91beedd2-72da-476f-a14e-80738712d63f" -> "b7daec42-a662-420c-ae8e-2ddcb128cd5f" [color="#0D2BE9" fontcolor="#FB0000"]
+}

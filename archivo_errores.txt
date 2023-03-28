@@ -1,0 +1,299 @@
+{
+	{
+		"No.":0
+		"Descripcion-Token":{
+			"Lexema":[
+			"Tipo": Error
+			"Columna":1
+			"Fila":4
+		}
+	},
+	{
+		"No.":1
+		"Descripcion-Token":{
+			"Lexema":1
+			"Tipo": Error
+			"Columna":3
+			"Fila":14
+		}
+	},
+	{
+		"No.":2
+		"Descripcion-Token":{
+			"Lexema":[
+			"Tipo": Error
+			"Columna":4
+			"Fila":12
+		}
+	},
+	{
+		"No.":3
+		"Descripcion-Token":{
+			"Lexema"::
+			"Tipo": Error
+			"Columna":5
+			"Fila":23
+		}
+	},
+	{
+		"No.":4
+		"Descripcion-Token":{
+			"Lexema":"
+			"Tipo": Error
+			"Columna":5
+			"Fila":24
+		}
+	},
+	{
+		"No.":5
+		"Descripcion-Token":{
+			"Lexema":s
+			"Tipo": Error
+			"Columna":5
+			"Fila":25
+		}
+	},
+	{
+		"No.":6
+		"Descripcion-Token":{
+			"Lexema":u
+			"Tipo": Error
+			"Columna":5
+			"Fila":26
+		}
+	},
+	{
+		"No.":7
+		"Descripcion-Token":{
+			"Lexema":m
+			"Tipo": Error
+			"Columna":5
+			"Fila":27
+		}
+	},
+	{
+		"No.":8
+		"Descripcion-Token":{
+			"Lexema":a
+			"Tipo": Error
+			"Columna":5
+			"Fila":28
+		}
+	},
+	{
+		"No.":9
+		"Descripcion-Token":{
+			"Lexema":"
+			"Tipo": Error
+			"Columna":5
+			"Fila":29
+		}
+	},
+	{
+		"No.":10
+		"Descripcion-Token":{
+			"Lexema":+
+			"Tipo": Error
+			"Columna":5
+			"Fila":31
+		}
+	},
+	{
+		"No.":11
+		"Descripcion-Token":{
+			"Lexema":1
+			"Tipo": Error
+			"Columna":6
+			"Fila":18
+		}
+	},
+	{
+		"No.":12
+		"Descripcion-Token":{
+			"Lexema":[
+			"Tipo": Error
+			"Columna":7
+			"Fila":12
+		}
+	},
+	{
+		"No.":13
+		"Descripcion-Token":{
+			"Lexema"::
+			"Tipo": Error
+			"Columna":8
+			"Fila":27
+		}
+	},
+	{
+		"No.":14
+		"Descripcion-Token":{
+			"Lexema":"
+			"Tipo": Error
+			"Columna":8
+			"Fila":28
+		}
+	},
+	{
+		"No.":15
+		"Descripcion-Token":{
+			"Lexema":S
+			"Tipo": Error
+			"Columna":8
+			"Fila":29
+		}
+	},
+	{
+		"No.":16
+		"Descripcion-Token":{
+			"Lexema":u
+			"Tipo": Error
+			"Columna":8
+			"Fila":30
+		}
+	},
+	{
+		"No.":17
+		"Descripcion-Token":{
+			"Lexema":m
+			"Tipo": Error
+			"Columna":8
+			"Fila":31
+		}
+	},
+	{
+		"No.":18
+		"Descripcion-Token":{
+			"Lexema":a
+			"Tipo": Error
+			"Columna":8
+			"Fila":32
+		}
+	},
+	{
+		"No.":19
+		"Descripcion-Token":{
+			"Lexema":"
+			"Tipo": Error
+			"Columna":8
+			"Fila":33
+		}
+	},
+	{
+		"No.":20
+		"Descripcion-Token":{
+			"Lexema":1
+			"Tipo": Error
+			"Columna":9
+			"Fila":22
+		}
+	},
+	{
+		"No.":21
+		"Descripcion-Token":{
+			"Lexema":1
+			"Tipo": Error
+			"Columna":9
+			"Fila":25
+		}
+	},
+	{
+		"No.":22
+		"Descripcion-Token":{
+			"Lexema":,
+			"Tipo": Error
+			"Columna":9
+			"Fila":26
+		}
+	},
+	{
+		"No.":23
+		"Descripcion-Token":{
+			"Lexema":2
+			"Tipo": Error
+			"Columna":10
+			"Fila":22
+		}
+	},
+	{
+		"No.":24
+		"Descripcion-Token":{
+			"Lexema"::
+			"Tipo": Error
+			"Columna":10
+			"Fila":24
+		}
+	},
+	{
+		"No.":25
+		"Descripcion-Token":{
+			"Lexema":0
+			"Tipo": Error
+			"Columna":10
+			"Fila":25
+		}
+	},
+	{
+		"No.":26
+		"Descripcion-Token":{
+			"Lexema":]
+			"Tipo": Error
+			"Columna":11
+			"Fila":12
+		}
+	},
+	{
+		"No.":27
+		"Descripcion-Token":{
+			"Lexema":3
+			"Tipo": Error
+			"Columna":12
+			"Fila":20
+		}
+	},
+	{
+		"No.":28
+		"Descripcion-Token":{
+			"Lexema":]
+			"Tipo": Error
+			"Columna":13
+			"Fila":8
+		}
+	},
+	{
+		"No.":29
+		"Descripcion-Token":{
+			"Lexema":,
+			"Tipo": Error
+			"Columna":13
+			"Fila":9
+		}
+	},
+	{
+		"No.":30
+		"Descripcion-Token":{
+			"Lexema":2
+			"Tipo": Error
+			"Columna":14
+			"Fila":14
+		}
+	},
+	{
+		"No.":31
+		"Descripcion-Token":{
+			"Lexema"::
+			"Tipo": Error
+			"Columna":14
+			"Fila":16
+		}
+	},
+	{
+		"No.":32
+		"Descripcion-Token":{
+			"Lexema":5
+			"Tipo": Error
+			"Columna":14
+			"Fila":17
+		}
+	}
+}

@@ -1,0 +1,16 @@
+// Grafo de operación Multiplicacion
+digraph {
+	"fe7574ab-9c4b-46e6-9e27-fde62bf09515" [label="Multiplicacion: 2109.0" fillcolor=green fontcolor="#FB0000" style=filled]
+	"f157d934-4151-4629-ab27-891814e352dc" [label="suma: 37.0" fillcolor=green fontcolor="#FB0000" style=filled]
+	"690fe804-a2dd-47b4-9264-90be7e0ad49b" [label="Suma: 14.0" fillcolor=green fontcolor="#FB0000" style=filled]
+	"4f3c688f-2ce4-4ace-9d8e-69a291456c85" [label=3 fillcolor=green fontcolor="#002EFF" style=filled]
+	"690fe804-a2dd-47b4-9264-90be7e0ad49b" -> "4f3c688f-2ce4-4ace-9d8e-69a291456c85" [color="#0D2BE9" fontcolor="#FB0000"]
+	"4a1d07d4-ce45-492f-a345-9ff681db332e" [label=11 fillcolor=green fontcolor="#002EFF" style=filled]
+	"690fe804-a2dd-47b4-9264-90be7e0ad49b" -> "4a1d07d4-ce45-492f-a345-9ff681db332e" [color="#0D2BE9" fontcolor="#FB0000"]
+	"f157d934-4151-4629-ab27-891814e352dc" -> "690fe804-a2dd-47b4-9264-90be7e0ad49b" [color="#0D2BE9" fontcolor="#FB0000"]
+	"59fcc382-5707-4f58-a8fe-244033fbc86a" [label=23 fillcolor=green fontcolor="#002EFF" style=filled]
+	"f157d934-4151-4629-ab27-891814e352dc" -> "59fcc382-5707-4f58-a8fe-244033fbc86a" [color="#0D2BE9" fontcolor="#FB0000"]
+	"fe7574ab-9c4b-46e6-9e27-fde62bf09515" -> "f157d934-4151-4629-ab27-891814e352dc" [color="#0D2BE9" fontcolor="#FB0000"]
+	"82f84b25-9bd9-438d-9dee-04cf555cb6da" [label=57 fillcolor=green fontcolor="#002EFF" style=filled]
+	"fe7574ab-9c4b-46e6-9e27-fde62bf09515" -> "82f84b25-9bd9-438d-9dee-04cf555cb6da" [color="#0D2BE9" fontcolor="#FB0000"]
+}

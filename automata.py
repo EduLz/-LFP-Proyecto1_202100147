@@ -1,6 +1,6 @@
 from Operacion import Operacion
 from Token import Token
-
+from Error import Error
 class Automata:
     letras = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s", "t", "u","v","w","x","y","z", "-"]
     numeros = ["1","2","3","4","5","6","7","8","9","0", "."]
@@ -11,12 +11,13 @@ class Automata:
     estado_actual = 0
     estado_anterior = 0
     estados_aceptacion = [9]
+    
 
     def analizar(self, cadena, operacion:Operacion):
         operandos = []
         token = ''
         tipo_operacion = ''
-        # error = False
+        tabla_errores=[]
 
         while len(cadena) > 0:
             char = cadena[0]
@@ -41,25 +42,32 @@ class Automata:
                     self.guardar_token(char)
                     self.estado_anterior = 0
                     self.estado_actual = 1
-                #else:
-                    #error = True
-                    #nuevoError = Error(fila, columna, char)
+                else:
+                    nuevoError = Error(self.fila, self.columna, char)
+                    tabla_errores.append(nuevoError)
 
             elif self.estado_actual == 1:
                 if char == '"':
                     self.guardar_token(char)
                     self.estado_anterior = 1
                     self.estado_actual = 2
+                    
                 elif char == '{':
                     self.guardar_token(char)
                     self.estado_anterior = 1
                     self.estado_actual = 10
+                else:
+                    nuevoError = Error(self.fila, self.columna, char)
+                    tabla_errores.append(nuevoError)
 
             elif self.estado_actual == 2:
                 if char.lower() in self.letras:
                     token += char
                     self.estado_anterior = 2
                     self.estado_actual = 3
+                else:
+                    nuevoError = Error(self.fila, self.columna, char)
+                    tabla_errores.append(nuevoError)
             
             elif self.estado_actual == 3:
                 if char.lower() in self.letras:
@@ -72,25 +80,33 @@ class Automata:
                     self.guardar_token(char)
                     self.estado_anterior = 3
                     self.estado_actual = 4
-
+                else:
+                    nuevoError = Error(self.fila, self.columna, char)
+                    tabla_errores.append(nuevoError)
             elif self.estado_actual == 4:
                 if char == ':':
                     self.guardar_token(char)
                     self.estado_anterior = 4
                     self.estado_actual = 5
-
+                else:
+                    nuevoError = Error(self.fila, self.columna, char)
+                    tabla_errores.append(nuevoError)
             elif self.estado_actual == 5:
                 if char == '"':
                     self.guardar_token(char)
                     self.estado_anterior = 5
                     self.estado_actual = 6
-
+                else:
+                    nuevoError = Error(self.fila, self.columna, char)
+                    tabla_errores.append(nuevoError)
             elif self.estado_actual == 6:
                 if char.lower() in self.letras:
                     token += char
                     self.estado_anterior = 6
                     self.estado_actual = 7
-            
+                else:
+                    nuevoError = Error(self.fila, self.columna, char)
+                    tabla_errores.append(nuevoError)
             elif self.estado_actual == 7:
                 if char.lower() in self.letras:
                     token += char
@@ -102,7 +118,9 @@ class Automata:
                     self.guardar_token(char)
                     self.estado_anterior = 7
                     self.estado_actual = 8
-            
+                else:
+                    nuevoError = Error(self.fila, self.columna, char)
+                    tabla_errores.append(nuevoError)
             elif self.estado_actual == 8:
                 if char == '}':
                     self.guardar_token(char)
@@ -112,20 +130,25 @@ class Automata:
                     self.guardar_token(char)
                     self.estado_anterior = 8
                     self.estado_actual = 1
-                    #error = False
-                
+                else:
+                    nuevoError = Error(self.fila, self.columna, char)
+                    tabla_errores.append(nuevoError)
             elif self.estado_actual == 10:
                 if char == '"':
                     self.guardar_token(char)
                     self.estado_anterior = 10
                     self.estado_actual = 11
-
+                else:
+                    nuevoError = Error(self.fila, self.columna, char)
+                    tabla_errores.append(nuevoError)
             elif self.estado_actual == 11:
                 if char.lower() in self.letras:
                     token += char
                     self.estado_anterior = 11
                     self.estado_actual = 12
-                
+                else:
+                    nuevoError = Error(self.fila, self.columna, char)
+                    tabla_errores.append(nuevoError)
             elif self.estado_actual == 12:
                 if char.lower() in self.letras:
                     token += char
@@ -137,13 +160,17 @@ class Automata:
                     self.guardar_token(char)
                     self.estado_anterior = 12
                     self.estado_actual = 13
-
+                else:
+                    nuevoError = Error(self.fila, self.columna, char)
+                    tabla_errores.append(nuevoError)
             elif self.estado_actual == 13:
                 if char == ':':
                     self.guardar_token(char)
                     self.estado_anterior = 13
                     self.estado_actual = 14
-            
+                else:
+                    nuevoError = Error(self.fila, self.columna, char)
+                    tabla_errores.append(nuevoError)
             elif self.estado_actual == 14:
                 if char == '"':
                     self.guardar_token(char)
@@ -157,13 +184,18 @@ class Automata:
                     self.guardar_token(char)
                     self.estado_anterior = 15
                     self.estado_actual = 19
-
+                elif char !='[' or char !='"':
+                    nuevoError = Error(self.fila, self.columna, char)
+                    tabla_errores.append(nuevoError)
+                    pass
             elif self.estado_actual == 15:
                 if char.lower() in self.letras:
                     token += char
                     self.estado_anterior = 15
                     self.estado_actual = 16
-            
+                else:
+                    nuevoError = Error(self.fila, self.columna, char)
+                    tabla_errores.append(nuevoError)
             elif self.estado_actual == 16:
                 if char.lower() in self.letras:
                     token += char
@@ -181,14 +213,18 @@ class Automata:
                     valor = self.analizar(cadena[1:], op)
                     cadena = valor[0]
                     operandos.append(valor[1])
-                    
+                else:
+                    nuevoError = Error(self.fila, self.columna, char)
+                    tabla_errores.append(nuevoError)
 
             elif self.estado_actual == 17:
                 if char == ',':
                     self.guardar_token(char)
                     self.estado_anterior = 17
                     self.estado_actual = 10
-
+                else:
+                    nuevoError = Error(self.fila, self.columna, char)
+                    tabla_errores.append(nuevoError)
             elif self.estado_actual == 18:
                 if char in self.numeros:
                     token += char
@@ -219,13 +255,17 @@ class Automata:
                     self.estado_actual = 21
                     operacion.operandos = operandos
                     return [cadena, operacion]
-
+                else:
+                    nuevoError = Error(self.fila, self.columna, char)
+                    tabla_errores.append(nuevoError)
             elif self.estado_actual == 19:
                 if char == '"':
                     self.guardar_token(char)
                     self.estado_anterior = 19
                     self.estado_actual = 11
-
+                else:
+                    nuevoError = Error(self.fila, self.columna, char)
+                    tabla_errores.append(nuevoError)
             elif self.estado_actual == 20:
                 if char == ',':
                     self.guardar_token(char)
@@ -241,7 +281,9 @@ class Automata:
                     self.estado_actual = 21
                     operacion.operandos = operandos
                     return [cadena, operacion]
-
+                else:
+                    nuevoError = Error(self.fila, self.columna, char)
+                    tabla_errores.append(nuevoError)
             elif self.estado_actual == 21:
                 if char == '}':
                     self.guardar_token(char)
@@ -251,12 +293,14 @@ class Automata:
                     self.guardar_token(char)
                     self.estado_anterior = 21
                     self.estado_actual = 1
-
+                else:
+                    nuevoError = Error(self.fila, self.columna, char)
+                    tabla_errores.append(nuevoError)
             self.columna += 1
             cadena = cadena[1:]
 
         operacion.operandos = operacion
-        return [cadena, operandos]
+        return [cadena, operandos, tabla_errores]
         #return self.estado_actual in self.estados_aceptacion
 
 

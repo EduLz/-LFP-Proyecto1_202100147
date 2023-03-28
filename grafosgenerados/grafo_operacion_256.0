@@ -1,0 +1,16 @@
+// Grafo de operación Potencia
+digraph {
+	"0c1643df-a4ab-46ac-b385-98eb610a71b5" [label="Potencia: 256.0" fillcolor=green fontcolor="#FB0000" style=filled]
+	"2bb03d05-4be6-418f-8fa7-e0a9db780cfa" [label="suma: 16.0" fillcolor=green fontcolor="#FB0000" style=filled]
+	"70f1cfcb-e440-4825-a5d4-7746ea445405" [label="Suma: 11.0" fillcolor=green fontcolor="#FB0000" style=filled]
+	"cf33c420-a084-4bc5-95ea-c5a5fcdc4abd" [label=10 fillcolor=green fontcolor="#002EFF" style=filled]
+	"70f1cfcb-e440-4825-a5d4-7746ea445405" -> "cf33c420-a084-4bc5-95ea-c5a5fcdc4abd" [color="#0D2BE9" fontcolor="#FB0000"]
+	"65c38d9e-8c9f-4271-993e-2e31de9f9fd4" [label=1 fillcolor=green fontcolor="#002EFF" style=filled]
+	"70f1cfcb-e440-4825-a5d4-7746ea445405" -> "65c38d9e-8c9f-4271-993e-2e31de9f9fd4" [color="#0D2BE9" fontcolor="#FB0000"]
+	"2bb03d05-4be6-418f-8fa7-e0a9db780cfa" -> "70f1cfcb-e440-4825-a5d4-7746ea445405" [color="#0D2BE9" fontcolor="#FB0000"]
+	"900d93ce-5a2e-4b2f-bc34-97c3a68b251e" [label=5 fillcolor=green fontcolor="#002EFF" style=filled]
+	"2bb03d05-4be6-418f-8fa7-e0a9db780cfa" -> "900d93ce-5a2e-4b2f-bc34-97c3a68b251e" [color="#0D2BE9" fontcolor="#FB0000"]
+	"0c1643df-a4ab-46ac-b385-98eb610a71b5" -> "2bb03d05-4be6-418f-8fa7-e0a9db780cfa" [color="#0D2BE9" fontcolor="#FB0000"]
+	"48d72366-fb0c-4d2e-a845-5d04aa9601d9" [label=2 fillcolor=green fontcolor="#002EFF" style=filled]
+	"0c1643df-a4ab-46ac-b385-98eb610a71b5" -> "48d72366-fb0c-4d2e-a845-5d04aa9601d9" [color="#0D2BE9" fontcolor="#FB0000"]
+}

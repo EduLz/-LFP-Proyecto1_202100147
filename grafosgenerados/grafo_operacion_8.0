@@ -1,0 +1,16 @@
+// Grafo de operación Suma
+digraph {
+	"bc5279e1-1a09-4de7-ac76-9de5b8ac96b6" [label="Suma: 8.0" fillcolor=green fontcolor="#FB0000" style=filled]
+	"bae6b956-b9ef-48a4-81a2-2b46f37020eb" [label="suma: 3.0" fillcolor=green fontcolor="#FB0000" style=filled]
+	"34fd6e22-8a24-4755-a635-413e02fbc847" [label="Operacion: 0" fillcolor=green fontcolor="#FB0000" style=filled]
+	"59aaa58e-caeb-4904-887b-4b4d7a150727" [label=1 fillcolor=green fontcolor="#002EFF" style=filled]
+	"34fd6e22-8a24-4755-a635-413e02fbc847" -> "59aaa58e-caeb-4904-887b-4b4d7a150727" [color="#0D2BE9" fontcolor="#FB0000"]
+	"551ba716-203f-4d28-a4f8-2f1dbeb8a9b7" [label=0 fillcolor=green fontcolor="#002EFF" style=filled]
+	"34fd6e22-8a24-4755-a635-413e02fbc847" -> "551ba716-203f-4d28-a4f8-2f1dbeb8a9b7" [color="#0D2BE9" fontcolor="#FB0000"]
+	"bae6b956-b9ef-48a4-81a2-2b46f37020eb" -> "34fd6e22-8a24-4755-a635-413e02fbc847" [color="#0D2BE9" fontcolor="#FB0000"]
+	"30663ffe-8f16-4731-9975-5c75683b3734" [label=3 fillcolor=green fontcolor="#002EFF" style=filled]
+	"bae6b956-b9ef-48a4-81a2-2b46f37020eb" -> "30663ffe-8f16-4731-9975-5c75683b3734" [color="#0D2BE9" fontcolor="#FB0000"]
+	"bc5279e1-1a09-4de7-ac76-9de5b8ac96b6" -> "bae6b956-b9ef-48a4-81a2-2b46f37020eb" [color="#0D2BE9" fontcolor="#FB0000"]
+	"33e92201-c429-432d-a58f-4471436895d1" [label=5 fillcolor=green fontcolor="#002EFF" style=filled]
+	"bc5279e1-1a09-4de7-ac76-9de5b8ac96b6" -> "33e92201-c429-432d-a58f-4471436895d1" [color="#0D2BE9" fontcolor="#FB0000"]
+}
